@@ -1,0 +1,57 @@
+ <!doctype html>
+<html lang="en">
+  <head>
+	<title>Barber Shop</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+    <script src="jquery.simplecolorpicker.js"></script>
+
+    <link rel="stylesheet" href="jquery.simplecolorpicker.css">
+
+
+
+  </head>
+  <body>
+		<div class="container">
+
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand" href="/">Barber Shop</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						
+							<li><a class="nav-link" href="/about">О нас</a></li>
+							<li><a class="nav-link" href="/visit">Записаться</a></li>
+							<li><a class="nav-link" href="/contacts">Контакты</a></li>
+							<li><a class="nav-link" href="/admin">Для администрации</a></li>
+						
+											</ul>
+				</div>
+			</nav>
+
+			<div>
+
+
+				<%if @error then %>
+						<div class="alert alert-danger"><%=@error%></div>
+				<% end %>
+				                  <%= yield %>
+			</div>
+					</div>
+    </body>
+  
+</html>
+
